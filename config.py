@@ -18,24 +18,24 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "26872474"))
+API_HASH = environ.get("API_HASH", "f8d3a289bf28a13a7159ad0b2ed114e7")
+BOT_TOKEN = environ.get("BOT_TOKEN", "5388018551:AAHseJjBHIKV08SDLYEdKDIHlxx0kQ3w1Z0")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5211097531').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "Berlin2k_bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://Premium:Premium@cluster0.7wydjo8.mongodb.net/?retryWrites=true&w=majority")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
+DB_URI = environ.get("DB_URI", "mongodb+srv://Karnan2k:karnan2k@cluster0.guq8k77.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = environ.get("DB_NAME", "techvjbotz")
 
 # Auto Delete Information
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001838736260"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
